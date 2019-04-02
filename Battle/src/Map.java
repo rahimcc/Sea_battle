@@ -1,13 +1,18 @@
+import java.util.Arrays;
 
 public class Map {
     String name;
     int nShip=10;
     Ship[] ships=new Ship[10];
-     char[][] grid= new char[10][10] ;
+    char[][] grid= new char[10][10] ;
     char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+
 
     public Map (String name){
         this.name=name;
+        for (int i=0; i<grid.length;i++) {
+            Arrays.fill(grid[i],'*');
+        }
     }
 
 
@@ -33,5 +38,13 @@ public class Map {
                 System.out.println();
             }
         }
+
+    public void addship (Ship ship,int startX, int startY, char pos ){
+        for (int i=0; i<ship.nSize ; i++){
+            if (pos=='h') grid[startX][startY+i]=ship.nShip[i];
+            else grid[startX+i][startY]=ship.nShip[i];
+        }
+
+    }
 
 }
