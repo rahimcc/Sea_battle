@@ -12,11 +12,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="Ship.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
               <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+=======
+      <file leaf-file-name="Ship.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ship.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
             </state>
           </provider>
         </entry>
@@ -24,20 +32,30 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="95">
               <caret line="26" column="59" lean-forward="true" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="144">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Map.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1235">
               <caret line="65" selection-start-line="65" selection-end-line="65" />
+=======
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
             </state>
           </provider>
         </entry>
@@ -54,11 +72,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/Map.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Ship.java" />
+=======
+        <option value="$PROJECT_DIR$/src/Ship.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Map.java" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="66" />
@@ -94,6 +124,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/rahim/Desktop/github/Sea_battle/Battle/src/Main.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -178,6 +209,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -200,12 +232,39 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+=======
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3597826" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Messages" order="7" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -272,7 +331,7 @@
     <entry file="file://$PROJECT_DIR$/src/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -292,6 +351,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Map.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1235">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
@@ -304,13 +364,43 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="630">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="247">
           <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+=======
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+>>>>>>> 9c92fbcb1d21494bf5bd165e03d2107d6651ed61
         </state>
       </provider>
     </entry>

@@ -8,6 +8,7 @@ public class Map {
     char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 
 
+
     public Map (String name){
         this.name=name;
 
@@ -67,4 +68,5 @@ public class Map {
 
         }
     }
+
 }
