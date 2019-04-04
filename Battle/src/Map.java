@@ -11,6 +11,7 @@ public class Map {
     }
 
 
+
     public  void printGrid(){
         System.out.print("\n");
         System.out.print("\t\tMap of "+ name+ "\n");
@@ -32,5 +33,5 @@ public class Map {
 
                 System.out.println();
             }
-        }
+    }
 }
