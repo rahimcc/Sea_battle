@@ -11,6 +11,6 @@ public class Ship {
         this.sName=sName;
         this.nSize=nSize;
         nShip=new char[nSize];
-        Arrays.fill(nShip,'X');
+        Arrays.fill(nShip,'0');
     }
 }
