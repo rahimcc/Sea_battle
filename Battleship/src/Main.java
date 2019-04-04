@@ -42,7 +42,9 @@ public class Main {
             opt=s.toCharArray();
 
 
-            UserMap.addship(UserMap.ships[UserMap.nShip],opt);
+           if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==1){
+               continue;
+           }
         }
 
         while (UserMap.nShip>0){

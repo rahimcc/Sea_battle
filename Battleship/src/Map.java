@@ -58,17 +58,39 @@ public class Map {
         }
     }
 
-    public void addship (Ship ship,char[] opt ){
+    public int addship (Ship ship,char[] opt ){
+
         int X=convert(opt[0]);
         int Y=opt[1]-'0';
 
-        for (int i=0; i<ship.nSize ; i++){
-            if (opt[2] =='H') grid[Y][X+i]=ship.nShip[i];
-            else grid[Y+i][X]=ship.nShip[i];
+        if (X<0 || Y<0 || X>9 || Y>9){
+            System.out.println("Out of range");
+            return 1;
+        }
+        else {
+            int i = (X - 1 < 0) ? 0 : X - 1;
+            int j = (Y - 1 < 0) ? 0 : Y - 1;
+            int endX = (X + 1 > 9) ? 10 : X + 1;
+            int endY = (Y + 1 > 9) ? 10 : Y + 1;
 
+            for (; i < endX; i++) {
+                for (; j < endY; j++) {
+                    if (grid[j][i]=='0'){
+                        System.out.println("Cannot be assigned");
+                        return 1;
+                    }
+                }
+            }
+        }
+
+
+        for (int k=0; k<ship.nSize ; k++){
+            if (opt[2] =='H') grid[Y][X+k]=ship.nShip[k];
+            else grid[Y+k][X]=ship.nShip[k];
         }
         printGrid();
         nShip++;
+        return 0;
     }
 
     public boolean check (char posX,char posY){
@@ -87,15 +109,15 @@ public class Map {
         return false;
     }
 
-
-
-    public void shoot (char posX, char posY){
-        int X=convert(posX);
-        int Y=posY-'0';
-        grid[Y][X]='X';
-        if (check(posX,posY)==false){
+    public void shoot (char posX, char posY) {
+        int X = convert(posX);
+        int Y = posY - '0';
+        grid[Y][X] = 'X';
+        if (check(posX, posY) == false) {
             nShip--;
         }
+
         printGrid();
+
     }
 }
