@@ -85,8 +85,12 @@ public class Map {
 
 
         for (int k=0; k<ship.nSize ; k++){
-            if (opt[2] =='H') grid[Y][X+k]=ship.nShip[k];
-            else grid[Y+k][X]=ship.nShip[k];
+            if (opt[2] =='H' || opt[2]=='h') grid[Y][X+k]=ship.nShip[k];
+            else if (opt[2]=='V' || opt[2]=='v') grid[Y+k][X]=ship.nShip[k];
+             else {
+                 System.out.println("Mistake in orientation of the ship ");
+                 return 1;
+             }
         }
         printGrid();
         nShip++;
@@ -116,8 +120,7 @@ public class Map {
         if (check(posX, posY) == false) {
             nShip--;
         }
-
         printGrid();
-
     }
+
 }
