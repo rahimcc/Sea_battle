@@ -16,23 +16,25 @@ public class Main {
 
         int nS;
         String s;
-        char[] opt= new char[3];
+        char[] opt;
 
 
 
         while(UserMap.nShip<10) {
             nS = (UserMap.nShip < 4) ? 1 : ((UserMap.nShip < 7) ? 2 : ((UserMap.nShip) < 9 ? 3 : ((UserMap.nShip < 10) ? 4 : -1)));
-            UserMap.ships[UserMap.nShip]= new Ship("Ship1",nS);
+
             System.out.println("Configuring ship of the size" + nS);
 
 
             System.out.println("Replace position: [column] [row] [Horizontal/Vertical (H/V)] ");
             s=input.nextLine();
             s=s.replaceAll("\\s+","");
+
             opt=s.toCharArray();
 
+            if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==1) continue;
 
-           if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==1) continue;
+
         }
 
         while (UserMap.nShip>0){

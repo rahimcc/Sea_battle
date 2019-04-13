@@ -3,11 +3,12 @@ import java.util.Arrays;
 public class Map {
     String name;
     int nShip=0;
+
     Ship[] ships=new Ship[10];
     char[][] grid= new char[10][10] ;
-    char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+    char[][] grid1= new char[10][10];
 
-
+    char[] alphabet = "abcdefghij".toCharArray();
 
     public Map (String name){
         this.name=name;
@@ -15,6 +16,7 @@ public class Map {
         for (int i=0; i<grid.length;i++) {
             Arrays.fill(grid[i],'*');
         }
+
     }
 
     public int convert (char choice){
@@ -97,9 +99,10 @@ public class Map {
         return 0;
     }
 
-    public boolean check (char posX,char posY){
+    public boolean check (char posX,char posY , char c ){
         int X=convert(posX);
         int Y=posY-'0';
+
         int i= (X-1<0) ? 0 : X-1;
         int j= (Y-1<0) ? 0 : Y-1;
         int endX=(X+1>9) ? 10 : X+1;
@@ -107,7 +110,8 @@ public class Map {
 
         for (;i<endX;i++){
             for (;j<endY;j++){
-                if (grid[i][j]=='0') return true ;
+                if (i==X && j== Y) continue;
+                if (grid[i][j]==c) return true ;
             }
         }
         return false;
@@ -116,11 +120,21 @@ public class Map {
     public void shoot (char posX, char posY) {
         int X = convert(posX);
         int Y = posY - '0';
-        grid[Y][X] = 'X';
-        if (check(posX, posY) == false) {
-            nShip--;
-        }
+
+        if (check(posX,posY,'0')==false && check(posX,posY,'/')==true)
+
+        if (check(posX,posY,'0')==true  &&  check(posX,posY,'/')==true   ) nShip--;
+
+
         printGrid();
+
     }
 
+    public void replace() {
+        for (int i = 0; i < nShip; i++) {
+            int nS = (nShip < 4) ? 1 : ((nShip < 7) ? 2 : ((nShip) < 9 ? 3 : ((nShip < 10) ? 4 : -1)));
+
+            ships[nShip] =new Ship("Ship",nS);
+        }
+    }
 }
