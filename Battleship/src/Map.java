@@ -7,7 +7,6 @@ public class Map {
     Ship[] ships=new Ship[10];
     char[][] grid= new char[10][10] ;
     char[][] grid1= new char[10][10];
-
     char[] alphabet = "abcdefghij".toCharArray();
 
     public Map (String name){
@@ -16,7 +15,6 @@ public class Map {
         for (int i=0; i<grid.length;i++) {
             Arrays.fill(grid[i],'*');
         }
-
     }
 
     public int convert (char choice){
@@ -37,7 +35,7 @@ public class Map {
     }
 
 
-    public  void printGrid(){
+    public void printGrid(){
         System.out.print("\n");
         System.out.print("\t\tMap of "+ name+ "\n");
 
@@ -47,43 +45,44 @@ public class Map {
         }
 
         System.out.println();
-
-
         for (int i=0;i<grid.length;i++){
             System.out.print(" ");
             System.out.print(i);
             for (int j=0;j<grid[0].length;j++){
                 System.out.print("  "+ grid[i][j]);
             }
-
             System.out.println();
         }
     }
 
-    public int addship (Ship ship,char[] opt ){
+    public boolean addship (Ship ship, char[] opt ){
+
+        if (opt.length!=3) {
+            System.out.println("Wrong format");
+            return false;
+        }
 
         int X=convert(opt[0]);
         int Y=opt[1]-'0';
 
         if (X<0 || Y<0 || X>9 || Y>9){
             System.out.println("Out of range");
-            return 1;
+            return false;
         }
-        else {
-            int i = (X - 1 < 0) ? 0 : X - 1;
-            int j = (Y - 1 < 0) ? 0 : Y - 1;
-            int endX = (X + 1 > 9) ? 10 : X + 1;
-            int endY = (Y + 1 > 9) ? 10 : Y + 1;
+
+        int i = (X - 1 < 0) ? 0 : X - 1;
+        int j = (Y - 1 < 0) ? 0 : Y - 1;
+        int endX = (X + 1 > 9) ? 10 : X + 1;
+        int endY = (Y + 1 > 9) ? 10 : Y + 1;
 
             for (; i < endX; i++) {
                 for (; j < endY; j++) {
                     if (grid[j][i]=='0'){
                         System.out.println("Cannot be assigned");
-                        return 1;
+                        return false;
                     }
                 }
             }
-        }
 
 
         for (int k=0; k<ship.nSize ; k++){
@@ -91,12 +90,12 @@ public class Map {
             else if (opt[2]=='V' || opt[2]=='v') grid[Y+k][X]=ship.nShip[k];
              else {
                  System.out.println("Mistake in orientation of the ship ");
-                 return 1;
+                 return false;
              }
         }
         printGrid();
         nShip++;
-        return 0;
+        return true;
     }
 
     public boolean check (char posX,char posY , char c ){
@@ -112,23 +111,42 @@ public class Map {
             for (;j<endY;j++){
                 if (i==X && j== Y) continue;
                 if (grid[i][j]==c) return true ;
+
             }
         }
         return false;
     }
 
-    public void shoot (char posX, char posY) {
+    public boolean shoot (char posX, char posY) {
         int X = convert(posX);
         int Y = posY - '0';
 
-        if (check(posX,posY,'0')==false && check(posX,posY,'/')==true)
-
-        if (check(posX,posY,'0')==true  &&  check(posX,posY,'/')==true   ) nShip--;
 
 
+        if (grid[X][Y]=='*') {
+            grid[X][Y]='-';
+            System.out.println("MISS");
+            return true;
+        }
+
+        if (grid[X][Y]=='0') {
+
+            if (check(posX, posY, '0')) {
+                grid[X][Y]='/';
+                return true;
+            }
+
+
+            if (check(posX, posY, '0') == true && check(posX, posY, '/') == true) nShip--;
+
+
+        }
         printGrid();
-
+        return true;
     }
+
+
+
 
     public void replace() {
         for (int i = 0; i < nShip; i++) {
