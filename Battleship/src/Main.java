@@ -40,6 +40,7 @@ public class Main {
         while (UserMap.nShip>0){
             System.out.print("shot position: ");
             s=input.nextLine();
+            s=s.replaceAll("\\s+","");
             opt=s.toCharArray();
             UserMap.shoot(opt[0],opt[1]);
         }

@@ -110,7 +110,7 @@ public class Map {
         for (;i<endX;i++){
             for (;j<endY;j++){
                 if (i==X && j== Y) continue;
-                if (grid[i][j]==c) return true ;
+                if (grid[j][i]==c) return true ;
 
             }
         }
@@ -121,23 +121,27 @@ public class Map {
         int X = convert(posX);
         int Y = posY - '0';
 
-
-
-        if (grid[X][Y]=='*') {
-            grid[X][Y]='-';
-            System.out.println("MISS");
-            return true;
+        if (X<0 || Y<0 || X>9 || Y>9){
+            System.out.println("Out of range");
+            return false;
         }
 
-        if (grid[X][Y]=='0') {
+
+        if (grid[Y][X]=='*') {
+            grid[Y][X]='-';
+            System.out.println("MISS");
+        }
+
+        if (grid[Y][X]=='0') {
 
             if (check(posX, posY, '0')) {
-                grid[X][Y]='/';
-                return true;
+                grid[Y][X]='/';
+            }else {
+                grid[Y][X]='X';
             }
 
 
-            if (check(posX, posY, '0') == true && check(posX, posY, '/') == true) nShip--;
+            if (check(posX, posY, '0') == false) nShip--;
 
 
         }
