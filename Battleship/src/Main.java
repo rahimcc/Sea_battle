@@ -5,15 +5,15 @@ public class Main {
     public static void main (String[] args){
 
 
-        Map UserMap = new Map("User");
-        Map CompMap = new Map("Computer");
+        Map UserMap = new Map("User");// merveillous
+        Map CompMap = new Map("Computer");// this is magnefique
 
         UserMap.printGrid();
         //CompMap.printGrid();
 
 
         Scanner input= new Scanner(System.in);
-        System.out.println("*********Initializing User's map*******\n");
+        System.out.println("*********Initializing User's map*******\n"); //i like this comment
 
         int nS;
         String s;
