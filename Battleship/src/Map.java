@@ -64,7 +64,6 @@ public class Map {
 
         int X=convert(opt[0]);
         int Y=opt[1]-'0';
-
         if (X<0 || Y<0 || X>9 || Y>9){
             System.out.println("Out of range");
             return false;
@@ -105,13 +104,12 @@ public class Map {
         int i= (X-1<0) ? 0 : X-1;
         int j= (Y-1<0) ? 0 : Y-1;
         int endX=(X+1>9) ? 10 : X+1;
-        int endY=(X+1>9) ? 10 : X+1;
+        int endY=(Y+1>9) ? 10 : Y+1;
 
         for (;i<endX;i++){
             for (;j<endY;j++){
                 if (i==X && j== Y) continue;
                 if (grid[j][i]==c) return true ;
-
             }
         }
         return false;
@@ -134,7 +132,7 @@ public class Map {
 
         if (grid[Y][X]=='0') {
 
-            if (check(posX, posY, '0')) {
+            if (check(posX, posY,'0')) {
                 grid[Y][X]='/';
             }else {
                 grid[Y][X]='X';

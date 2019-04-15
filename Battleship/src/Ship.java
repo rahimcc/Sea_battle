@@ -7,7 +7,6 @@ public class Ship {
 
 
 
-
     public Ship(String sName , int nSize ){
         this.sName=sName;
         this.nSize=nSize;
