@@ -50,7 +50,7 @@ public class Map {
             System.out.print(" ");
             System.out.print(i);
             for (int j=0;j<grid[0].length;j++){
-                System.out.print("  "+ grid[i][j]);
+                System.out.print("  "+ grid[i][j]); // hgkjhgjkhg
             }
             System.out.println();
         }
