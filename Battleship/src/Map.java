@@ -14,6 +14,7 @@ public class Map {
 
         for (int i=0; i<grid.length;i++) {
             Arrays.fill(grid[i],'*');
+            Arrays.fill(grid1[i],'*');
         }
     }
 
@@ -97,22 +98,24 @@ public class Map {
         return true;
     }
 
-    public boolean check (char posX,char posY , char c ){
-        int X=convert(posX);
-        int Y=posY-'0';
+    public boolean check (int  posX,int  posY , char c ) {
+        //        int X=convert(posX);
+        //        int Y=posY-'0';
 
-        int i= (X-1<0) ? 0 : X-1;
-        int j= (Y-1<0) ? 0 : Y-1;
-        int endX=(X+1>9) ? 10 : X+1;
-        int endY=(Y+1>9) ? 10 : Y+1;
 
-        for (;i<endX;i++){
-            for (;j<endY;j++){
-                if (i==X && j== Y) continue;
-                if (grid[j][i]==c) return true ;
+        int endX = (posX + 1 > 9) ? 10 : posX + 2;
+        int endY = (posY + 1 > 9) ? 10 : posY + 2;
+
+
+        for (int i = (posX - 1 < 0) ? 0 : posX - 1; i < endX; i++){
+            for (int k = (posY - 1 < 0) ? 0 : posY - 1; k < endY; k++) {
+                if (i==posX && k==posY) continue;
+                if (grid[k][i]==c) return true ;
             }
-        }
-        return false;
+         }
+//        return false;
+
+        return false ;
     }
 
     public boolean shoot (char posX, char posY) {
@@ -124,7 +127,7 @@ public class Map {
             return false;
         }
 
-
+        System.out.println(X+" "+ Y);
         if (grid[Y][X]=='*') {
             grid[Y][X]='-';
             System.out.println("MISS");
@@ -132,16 +135,13 @@ public class Map {
 
         if (grid[Y][X]=='0') {
 
-            if (check(posX, posY,'0')) {
+            if (check(X , Y,'0')) {
                 grid[Y][X]='/';
-            }else {
+            } else {
                 grid[Y][X]='X';
+                destructship(X,Y);
+                nShip--;
             }
-
-
-            if (check(posX, posY, '0') == false) nShip--;
-
-
         }
         printGrid();
         return true;
@@ -149,12 +149,28 @@ public class Map {
 
 
 
+    public void destructship (int posX, int posY ){
 
-    public void replace() {
-        for (int i = 0; i < nShip; i++) {
-            int nS = (nShip < 4) ? 1 : ((nShip < 7) ? 2 : ((nShip) < 9 ? 3 : ((nShip < 10) ? 4 : -1)));
+        int endX = (posX + 1 > 9) ? 10 : posX + 2;
+        int endY = (posY + 1 > 9) ? 10 : posY + 2;
+        int check=0;
+        int buffX=posX;
+        int buffY=posY;
 
-            ships[nShip] =new Ship("Ship",nS);
+
+        for (int i = (posX - 1 < 0) ? 0 : posX - 1; i < endX; i++){
+            for (int k = (posY - 1 < 0) ? 0 : posY - 1; k < endY; k++) {
+                if (i==posX && k==posY) continue;
+
+                if (grid[k][i]=='*') grid[k][i]='-';
+                if (grid[k][i]=='/'){
+                    grid[k][i]='X';
+                    buffX=i;
+                    buffY=k;
+                    check=1;
+                }
+            }
         }
+        if (check==1) destructship(buffX,buffY);
     }
 }

@@ -5,15 +5,15 @@ public class Main {
     public static void main (String[] args){
 
 
-        Map UserMap = new Map("User");
-        Map CompMap = new Map("Computer");
+        Map UserMap = new Map("User");// merveillous
+        Map CompMap = new Map("Computer");// this is magnefique
 
         UserMap.printGrid();
         //CompMap.printGrid();
 
 
         Scanner input= new Scanner(System.in);
-        System.out.println("*********Initializing User's map*******\n");
+        System.out.println("*********Initializing User's map*******\n"); //i like this comment
 
         int nS;
         String s;
@@ -23,7 +23,7 @@ public class Main {
 
         while(UserMap.nShip<10) {
             nS = (UserMap.nShip < 4) ? 1 : ((UserMap.nShip < 7) ? 2 : ((UserMap.nShip) < 9 ? 3 : ((UserMap.nShip < 10) ? 4 : -1)));
-            System.out.println("Configuring ship of the size "+nS+":");
+            System.out.println("Configuring ship of the size "+ nS +":");
             System.out.print("Position");
             UserMap.ships[UserMap.nShip]= new Ship("ship",nS);
             s=input.nextLine();
@@ -32,7 +32,7 @@ public class Main {
             opt=s.toCharArray();
 
 
-            if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==false) continue;
+            if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==false ) continue;
 
 
         }
