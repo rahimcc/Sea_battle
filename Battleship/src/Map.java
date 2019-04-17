@@ -56,6 +56,12 @@ public class Map {
         }
     }
 
+    boolean copyGrid (int X, int Y ){
+        grid1[Y][X]=grid[Y][X];
+        printGrid();
+        return true;
+    }
+
     public boolean addship (Ship ship, char[] opt ){
 
         if (opt.length!=3) {
@@ -84,24 +90,41 @@ public class Map {
                 }
             }
 
+        for (int k=0; k<ship.nSize ; k++){
+
+            if (opt[2] =='H' || opt[2]=='h') {
+                //grid[Y][X+k]=ship.nShip[k];
+                if (check(Y, X + k, '0')) {
+                    System.out.println("Cannot be assigned");
+                    return false;
+                }
+            }
+            else if (opt[2]=='V' || opt[2]=='v') {
+                if (check(Y+k,X,'0')) {
+                    System.out.println("Cannot be assigned");
+                    return false;
+                }
+            }// grid[Y+k][X]=ship.nShip[k];
+            else {
+                System.out.println("Mistake in orientation of the ship ");
+                return false;
+            }
+        }
 
         for (int k=0; k<ship.nSize ; k++){
             if (opt[2] =='H' || opt[2]=='h') grid[Y][X+k]=ship.nShip[k];
             else if (opt[2]=='V' || opt[2]=='v') grid[Y+k][X]=ship.nShip[k];
-             else {
-                 System.out.println("Mistake in orientation of the ship ");
-                 return false;
-             }
         }
+
         printGrid();
         nShip++;
         return true;
+
     }
 
     public boolean check (int  posX,int  posY , char c ) {
         //        int X=convert(posX);
-        //        int Y=posY-'0';
-
+        //        int Y=posY-'0
 
         int endX = (posX + 1 > 9) ? 10 : posX + 2;
         int endY = (posY + 1 > 9) ? 10 : posY + 2;
