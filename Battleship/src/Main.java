@@ -20,7 +20,6 @@ public class Main {
         char[] opt;
 
 
-
         while(UserMap.nShip<10) {
             nS = (UserMap.nShip < 4) ? 1 : ((UserMap.nShip < 7) ? 2 : ((UserMap.nShip) < 9 ? 3 : ((UserMap.nShip < 10) ? 4 : -1)));
             System.out.println("Configuring ship of the size "+ nS +":");
@@ -32,7 +31,7 @@ public class Main {
             opt=s.toCharArray();
 
 
-            if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==false ) continue;
+            if (UserMap.addship(UserMap.ships[UserMap.nShip],opt)==false ) continue;
 
 
         }

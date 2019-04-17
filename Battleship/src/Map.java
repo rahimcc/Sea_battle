@@ -56,6 +56,16 @@ public class Map {
         }
     }
 
+    public void printGrid1(){
+        for (int i=0; i<10;i++){
+            for (int j=0; j<10; j++){
+                grid1[i][j]=grid[i][j];
+            }
+        }
+    }
+
+
+
     public boolean addship (Ship ship, char[] opt ){
 
         if (opt.length!=3) {
@@ -130,9 +140,7 @@ public class Map {
         System.out.println(X+" "+ Y);
         if (grid[Y][X]=='*') {
             grid[Y][X]='-';
-            System.out.println("MISS");
         }
-
         if (grid[Y][X]=='0') {
 
             if (check(X , Y,'0')) {
