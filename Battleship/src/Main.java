@@ -1,14 +1,47 @@
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+import javax.jws.soap.SOAPBinding;
 import java.net.UnknownServiceException;
 import java.util.Scanner;
 
 public class Main {
+
+    public static void printMaps(Map User, Map Comp){
+        System.out.print("========="+ User.name+ "========");
+        System.out.println("\t\t ======="+ Comp.name+ "=======");
+        System.out.print("  ");
+        for (int i=0;i<User.alphabet.length;i++){
+            System.out.print(User.alphabet[i]+" ");
+        }
+        System.out.print("\t\t  ");
+        for (int i=0;i<Comp.alphabet.length;i++){
+            System.out.print(Comp.alphabet[i]+" ");
+        }
+
+        System.out.print("\n");
+        for (int i=0; i<10; i++){
+            System.out.print(i+" ");
+            for (int j=0; j<10; j++ ){
+                System.out.print(User.grid[i][j]+" " );
+            }
+            System.out.print("\t\t");
+            System.out.print(i+" ");
+            for (int k=0;k<10;k++ ) {
+                System.out.print(Comp.grid[i][k]+" ");
+            }
+            System.out.print("\n");
+        }
+    }
+
     public static void main (String[] args){
 
 
         Map UserMap = new Map("User");// merveillous
         Map CompMap = new Map("Computer");// this is magnefique
 
-        UserMap.printGrid();
+       // printMaps(UserMap,CompMap);
+
+          UserMap.printGrid();
         //CompMap.printGrid();
 
 
@@ -36,16 +69,13 @@ public class Main {
 
         }
 
-        while (UserMap.nShip>0){
+        while (UserMap.nShip>0) {
             System.out.print("shot position: ");
-            s=input.nextLine();
-            s=s.replaceAll("\\s+","");
-            opt=s.toCharArray();
-            UserMap.shoot(opt[0],opt[1]);
+            s = input.nextLine();
+            s = s.replaceAll("\\s+", "");
+            opt = s.toCharArray();
+            UserMap.shoot(opt[0], opt[1]);
         }
 
-
-        System.out.println("GAME OVER");
     }
-
 }

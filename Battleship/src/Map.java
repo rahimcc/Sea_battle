@@ -50,12 +50,13 @@ public class Map {
             System.out.print(" ");
             System.out.print(i);
             for (int j=0;j<grid[0].length;j++){
-                System.out.print("  "+ grid[i][j]);
+                System.out.print("  "+ grid[i][j]); // hgkjhgjkhg
             }
             System.out.println();
         }
     }
 
+<<<<<<< HEAD
     public void printGrid1(){
         for (int i=0; i<10;i++){
             for (int j=0; j<10; j++){
@@ -66,6 +67,14 @@ public class Map {
 
 
 
+=======
+    boolean copyGrid (int X, int Y ){
+        grid1[Y][X]=grid[Y][X];
+        printGrid();
+        return true;
+    }
+
+>>>>>>> 58cccbae86552a0805ba1f0725cda2fb9e246011
     public boolean addship (Ship ship, char[] opt ){
 
         if (opt.length!=3) {
@@ -85,7 +94,7 @@ public class Map {
         int endX = (X + 1 > 9) ? 10 : X + 1;
         int endY = (Y + 1 > 9) ? 10 : Y + 1;
 
-            for (; i < endX; i++) {
+         /*   for (; i < endX; i++) {
                 for (; j < endY; j++) {
                     if (grid[j][i]=='0'){
                         System.out.println("Cannot be assigned");
@@ -94,24 +103,45 @@ public class Map {
                 }
             }
 
-
+        */
+         if (opt[2] =='H' || opt[2]=='h') {
+                //grid[Y][X+k]=ship.nShip[k];
+             for (int k = 0; k < ship.nSize; k++) {
+                 if (check(X, (Y  + k), '0')) {
+                     System.out.println("not be assigned");
+                     printGrid();
+                     return false;
+                    }
+                }
+         }
+         else if (opt[2]=='V' || opt[2]=='v'){
+            for (int k = 0; k < ship.nSize; k++) {
+               if (check((X + k), Y, '0')) {
+                  System.out.println("not be assigned");
+                  printGrid();
+                  return false;
+            }
+        }
+    }
+    //grid[Y+k][X]=ship.nShip[k];
+            else {
+                System.out.println("Mistake in orientation of the ship ");
+                return false;
+            }
         for (int k=0; k<ship.nSize ; k++){
             if (opt[2] =='H' || opt[2]=='h') grid[Y][X+k]=ship.nShip[k];
             else if (opt[2]=='V' || opt[2]=='v') grid[Y+k][X]=ship.nShip[k];
-             else {
-                 System.out.println("Mistake in orientation of the ship ");
-                 return false;
-             }
         }
+
         printGrid();
         nShip++;
         return true;
+
     }
 
     public boolean check (int  posX,int  posY , char c ) {
         //        int X=convert(posX);
-        //        int Y=posY-'0';
-
+        //        int Y=posY-'0
 
         int endX = (posX + 1 > 9) ? 10 : posX + 2;
         int endY = (posY + 1 > 9) ? 10 : posY + 2;
@@ -120,10 +150,14 @@ public class Map {
         for (int i = (posX - 1 < 0) ? 0 : posX - 1; i < endX; i++){
             for (int k = (posY - 1 < 0) ? 0 : posY - 1; k < endY; k++) {
                 if (i==posX && k==posY) continue;
-                if (grid[k][i]==c) return true ;
+                if (grid[k][i]==c){
+                    grid[k][i]='2';
+                    return true ;
+                }
+
             }
          }
-//        return false;
+      // return false;
 
         return false ;
     }
@@ -142,7 +176,6 @@ public class Map {
             grid[Y][X]='-';
         }
         if (grid[Y][X]=='0') {
-
             if (check(X , Y,'0')) {
                 grid[Y][X]='/';
             } else {
