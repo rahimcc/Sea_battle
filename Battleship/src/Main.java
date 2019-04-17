@@ -39,9 +39,9 @@ public class Main {
         Map UserMap = new Map("User");// merveillous
         Map CompMap = new Map("Computer");// this is magnefique
 
-        printMaps(UserMap,CompMap);
+       // printMaps(UserMap,CompMap);
 
-        /*  UserMap.printGrid();
+          UserMap.printGrid();
         //CompMap.printGrid();
 
 
@@ -70,18 +70,13 @@ public class Main {
 
         }
 
-        while (UserMap.nShip>0){
+        while (UserMap.nShip>0) {
             System.out.print("shot position: ");
-            s=input.nextLine();
-            s=s.replaceAll("\\s+","");
-            opt=s.toCharArray();
-            UserMap.shoot(opt[0],opt[1]);
+            s = input.nextLine();
+            s = s.replaceAll("\\s+", "");
+            opt = s.toCharArray();
+            UserMap.shoot(opt[0], opt[1]);
         }
 
-
-        System.out.println("GAME OVER");
-   */
-
     }
-
 }

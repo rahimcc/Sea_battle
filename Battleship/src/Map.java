@@ -81,7 +81,7 @@ public class Map {
         int endX = (X + 1 > 9) ? 10 : X + 1;
         int endY = (Y + 1 > 9) ? 10 : Y + 1;
 
-            for (; i < endX; i++) {
+         /*   for (; i < endX; i++) {
                 for (; j < endY; j++) {
                     if (grid[j][i]=='0'){
                         System.out.println("Cannot be assigned");
@@ -90,27 +90,31 @@ public class Map {
                 }
             }
 
-        for (int k=0; k<ship.nSize ; k++){
-
-            if (opt[2] =='H' || opt[2]=='h') {
+        */
+         if (opt[2] =='H' || opt[2]=='h') {
                 //grid[Y][X+k]=ship.nShip[k];
-                if (check(Y, X + k, '0')) {
-                    System.out.println("Cannot be assigned");
-                    return false;
+             for (int k = 0; k < ship.nSize; k++) {
+                 if (check(X, (Y  + k), '0')) {
+                     System.out.println("not be assigned");
+                     printGrid();
+                     return false;
+                    }
                 }
+         }
+         else if (opt[2]=='V' || opt[2]=='v'){
+            for (int k = 0; k < ship.nSize; k++) {
+               if (check((X + k), Y, '0')) {
+                  System.out.println("not be assigned");
+                  printGrid();
+                  return false;
             }
-            else if (opt[2]=='V' || opt[2]=='v') {
-                if (check(Y+k,X,'0')) {
-                    System.out.println("Cannot be assigned");
-                    return false;
-                }
-            }// grid[Y+k][X]=ship.nShip[k];
+        }
+    }
+    //grid[Y+k][X]=ship.nShip[k];
             else {
                 System.out.println("Mistake in orientation of the ship ");
                 return false;
             }
-        }
-
         for (int k=0; k<ship.nSize ; k++){
             if (opt[2] =='H' || opt[2]=='h') grid[Y][X+k]=ship.nShip[k];
             else if (opt[2]=='V' || opt[2]=='v') grid[Y+k][X]=ship.nShip[k];
@@ -133,7 +137,11 @@ public class Map {
         for (int i = (posX - 1 < 0) ? 0 : posX - 1; i < endX; i++){
             for (int k = (posY - 1 < 0) ? 0 : posY - 1; k < endY; k++) {
                 if (i==posX && k==posY) continue;
-                if (grid[k][i]==c) return true ;
+                if (grid[k][i]==c){
+                    grid[k][i]='2';
+                    return true ;
+                }
+
             }
          }
       // return false;
@@ -157,7 +165,6 @@ public class Map {
         }
 
         if (grid[Y][X]=='0') {
-
             if (check(X , Y,'0')) {
                 grid[Y][X]='/';
             } else {
