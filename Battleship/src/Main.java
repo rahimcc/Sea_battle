@@ -1,6 +1,3 @@
-
-import sun.util.resources.cldr.ar.CalendarData_ar_OM;
-
 import java.util.Scanner;
 
 public class Main {
@@ -72,8 +69,6 @@ public class Main {
          */
 
         printMaps(UserMap,CompMap);
-
-
         while (CompMap.nShip>0) {
             System.out.print("shot position: ");
             s = input.nextLine();
@@ -83,5 +78,7 @@ public class Main {
             CompMap.copygrid();
             printMaps(UserMap,CompMap);
         }
+
+
     }
 }

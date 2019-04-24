@@ -21,41 +21,18 @@ public class Map {
 
     public int convert(char choice) {
         switch (choice) {
-            case 'A':
-            case 'a':
-                return 0;
-            case 'B':
-            case 'b':
-                return 1;
-            case 'C':
-            case 'c':
-                return 2;
-            case 'D':
-            case 'd':
-                return 3;
-            case 'E':
-            case 'e':
-                return 4;
-            case 'F':
-            case 'f':
-                return 5;
-            case 'G':
-            case 'g':
-                return 6;
-            case 'H':
-            case 'h':
-                return 7;
-            case 'I':
-            case 'i':
-                return 8;
-            case 'J':
-            case 'j':
-                return 9;
-            case 'K':
-            case 'k':
-                return 10;
-            default:
-                return -1;
+            case 'A':case 'a':  return 0;
+            case 'B':case 'b':  return 1;
+            case 'C':case 'c':  return 2;
+            case 'D':case 'd':  return 3;
+            case 'E': case 'e': return 4;
+            case 'F': case 'f': return 5;
+            case 'G': case 'g': return 6;
+            case 'H': case 'h': return 7;
+            case 'I': case 'i': return 8;
+            case 'J': case 'j': return 9;
+            case 'K': case 'k': return 10;
+            default: return -1;
         }
     }
 
@@ -84,6 +61,12 @@ public class Map {
         grid1[Y][X] = grid[Y][X];
         printGrid();
         return true;
+    }
+
+    public boolean checkship(int X,int Y,char c, Ship s ){
+
+        for
+
     }
 
     public boolean addship(Ship ship, char[] opt) {
@@ -148,6 +131,19 @@ public class Map {
         return true;
     }
 
+    public boolean checkship(int posX, int posY, Ship s, char c){
+        if (s.nSize==0) return true;
+
+        if (check(posX,posY,'0')) return false;
+       else {
+            if (c=='h' || c=='H') posX=posX+1;
+            else if (c=='v' || c=='V') posY=posY+1;
+            checkship(posX, posY, s, c);
+            s.nSize--;
+        }
+    }
+
+
     public boolean check(int posX, int posY, char c) {
         //        int X=convert(posX);
         //        int Y=posY-'0
@@ -161,12 +157,9 @@ public class Map {
                 if (i == posX && k == posY) continue;
                 if (grid[k][i] == c) {
                     return true;
-                }
-
+                    }
             }
         }
-        // return false;
-
         return false;
     }
 
@@ -315,6 +308,5 @@ public class Map {
             }
         }
     }
-
 }
 
