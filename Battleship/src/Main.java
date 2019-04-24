@@ -1,7 +1,6 @@
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
-import javax.jws.soap.SOAPBinding;
-import java.net.UnknownServiceException;
+import sun.util.resources.cldr.ar.CalendarData_ar_OM;
+
 import java.util.Scanner;
 
 public class Main {
@@ -27,23 +26,21 @@ public class Main {
             System.out.print("\t\t");
             System.out.print(i+" ");
             for (int k=0;k<10;k++ ) {
-                System.out.print(Comp.grid[i][k]+" ");
+                System.out.print(Comp.grid1[i][k]+" ");
             }
             System.out.print("\n");
         }
     }
 
+
+
+
+
     public static void main (String[] args){
-
-
         Map UserMap = new Map("User");// merveillous
         Map CompMap = new Map("Computer");// this is magnefique
 
-       // printMaps(UserMap,CompMap);
-
-          UserMap.printGrid();
-        //CompMap.printGrid();
-
+        printMaps(UserMap,CompMap);
 
         Scanner input= new Scanner(System.in);
         System.out.println("*********Initializing User's map*******\n"); //i like this comment
@@ -58,25 +55,33 @@ public class Main {
             nS = (UserMap.nShip < 4) ? 1 : ((UserMap.nShip < 7) ? 2 : ((UserMap.nShip) < 9 ? 3 : ((UserMap.nShip < 10) ? 4 : -1)));
             System.out.println("Configuring ship of the size "+ nS +":");
             System.out.print("Position");
-            UserMap.ships[UserMap.nShip]= new Ship("ship",nS);
             s=input.nextLine();
             s=s.replaceAll("\\s+","");
 
             opt=s.toCharArray();
 
 
+            UserMap.ships[UserMap.nShip]= new Ship("ship",nS);
             if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==false ) continue;
-
-
+            printMaps(UserMap,CompMap);
         }
 
-        while (UserMap.nShip>0) {
+        CompMap.fill();
+        /*
+        define comps map
+         */
+
+        printMaps(UserMap,CompMap);
+
+
+        while (CompMap.nShip>0) {
             System.out.print("shot position: ");
             s = input.nextLine();
             s = s.replaceAll("\\s+", "");
             opt = s.toCharArray();
-            UserMap.shoot(opt[0], opt[1]);
+            CompMap.shoot(opt[0], opt[1]);
+            CompMap.copygrid();
+            printMaps(UserMap,CompMap);
         }
-
     }
 }
