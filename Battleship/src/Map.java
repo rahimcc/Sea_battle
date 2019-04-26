@@ -293,7 +293,7 @@ public class Map {
         ships[9] = new Ship("ship", 4);
         opt[0] = 'j';
         opt[1] = '0';
-        opt[2] = 'v';
+        opt[2] = 'v';  // this is comment  
         addship(ships[9], opt);
 
     }
