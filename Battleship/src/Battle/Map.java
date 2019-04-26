@@ -17,6 +17,10 @@ public class Map extends Application {
         Parent root= FXMLLoader.load(getClass().getResource("blueprint.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root));
+
+
+
+
         primaryStage.show();
 
     }
