@@ -3,27 +3,27 @@ import java.util.Scanner;
 public class Main {
 
     public static void printMaps(Map User, Map Comp){
-        System.out.print("========="+ User.name+ "========");
-        System.out.println("\t\t ======="+ Comp.name+ "=======");
+        System.out.print("\t========="+ User.name+ "========");
+        System.out.println("\t\t\t\t \t======="+ Comp.name+ "=======");
         System.out.print("  ");
         for (int i=0;i<User.alphabet.length;i++){
-            System.out.print(User.alphabet[i]+" ");
+            System.out.print(User.alphabet[i]+"  ");
         }
         System.out.print("\t\t  ");
         for (int i=0;i<Comp.alphabet.length;i++){
-            System.out.print(Comp.alphabet[i]+" ");
+            System.out.print(Comp.alphabet[i]+"  ");
         }
 
         System.out.print("\n");
         for (int i=0; i<10; i++){
             System.out.print(i+" ");
             for (int j=0; j<10; j++ ){
-                System.out.print(User.grid[i][j]+" " );
+                System.out.print(User.grid_back[i][j]+"  " );
             }
             System.out.print("\t\t");
             System.out.print(i+" ");
             for (int k=0;k<10;k++ ) {
-                System.out.print(Comp.grid1[i][k]+" ");
+                System.out.print(Comp.grid_back[i][k]+"  ");
             }
             System.out.print("\n");
         }
@@ -47,8 +47,8 @@ public class Main {
         char[] opt;
 
 
-        while(UserMap.nShip<10) {
-            nS = (UserMap.nShip < 4) ? 1 : ((UserMap.nShip < 7) ? 2 : ((UserMap.nShip) < 9 ? 3 : ((UserMap.nShip < 10) ? 4 : -1)));
+        while(UserMap.nShip<9) {
+            nS = (UserMap.nShip < 1) ? 5 : ((UserMap.nShip < 3) ? 4 : ((UserMap.nShip) < 5 ? 3 : ((UserMap.nShip < 9) ? 2 : -1)));
             System.out.println("Configuring ship of the size "+ nS +":");
             System.out.print("Position");
             s=input.nextLine();
@@ -56,19 +56,15 @@ public class Main {
 
             opt=s.toCharArray();
 
-
-<<<<<<< HEAD
+          /*  UserMap.ships[UserMap.nShip]= new Ship(nS);
             if (UserMap.addship(UserMap.ships[UserMap.nShip],opt)==false ) continue;
-
-
-=======
-            UserMap.ships[UserMap.nShip]= new Ship("ship",nS);
+*/
+            UserMap.ships[UserMap.nShip]= new Ship(nS);
             if ( UserMap.addship(UserMap.ships[UserMap.nShip],opt)==false ) continue;
             printMaps(UserMap,CompMap);
->>>>>>> 45217a3364e1f60e030287d0b9f3c9888d5e526a
         }
 
-        CompMap.fill();
+        CompMap.autofill();
         /*
         define comps map
          */
