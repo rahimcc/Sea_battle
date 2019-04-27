@@ -11,6 +11,4 @@ public class Ship {
         Arrays.fill(nShip,'0');
     }
 }
-//the en of the world
-// theprotector new seaoson came out
-//elite is great
+
