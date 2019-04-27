@@ -98,42 +98,40 @@ public class Map {
         return true;
     }
 
-
-    public boolean shoot(char posX, char posY) {
-        int X = convert(posX);
-        int Y = posY - '0';
-
-        if (X < 0 || Y < 0 || X > 9 || Y > 9) {
-            System.out.println("Out of range");
-            return false;
-        }
-
-
+    public boolean shootint (int X, int Y){
         System.out.println(X+" "+ Y);
         if (grid_back[Y][X]=='*') {
             grid_back[Y][X]='-';
+            return false;
         }
-        if (grid_back[Y][X]=='0') {
-            if (check(X, Y, '0'))
-                grid_back[Y][X] = '/';
-            System.out.println(X + " " + Y);
-            if (grid_back[Y][X] == '*') {
-                grid_back[Y][X] = '-';
-                System.out.println("MISS");
-            }
-        }
+
         if (grid_back[Y][X] == '0') {
             if (check(X, Y, '0')) {
                 grid_back[Y][X] = '/';
-
+                return true;
             } else {
                 grid_back[Y][X] = 'X';
                 destructship(X, Y);
                 nShip--;
             }
         }
-        // printGrid();
         return true;
+    }
+
+    public boolean shootchar(char[] pos) {
+
+        if (pos.length!=2) {
+            System.out.println("Wrong format    ");
+        return  false;
+        }
+        int X = convert(pos[0]);
+        int Y = pos[1] - '0';
+        if (X < 0 || Y < 0 || X > 9 || Y > 9) {
+            System.out.println("Out of range");
+            return false;
+        }
+         if (shootint(X,Y)) return true;
+       return false;
     }
 
 
@@ -191,8 +189,16 @@ public class Map {
             }
             nShip++;
         }
+    }
 
+    public boolean autoshoot (){
+       int x,y ;
+        Random rand = new Random();
+        x=rand.nextInt(10);
+        y=rand.nextInt(10);
 
+        if (shootint(x,y)) return true;
+        return false;
     }
 
 
