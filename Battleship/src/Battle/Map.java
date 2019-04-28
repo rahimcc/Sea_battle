@@ -16,7 +16,7 @@ public class Map extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root= FXMLLoader.load(getClass().getResource("blueprint.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("");
         primaryStage.setScene(new Scene(root,600,500));
         primaryStage.show();
     }
