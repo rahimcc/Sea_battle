@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="b2902a5c-ad40-40a0-a59b-81c2e173c2dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Map.java" afterDir="false" />
-=======
-    <list default="true" id="d4b9b264-f516-4e8c-b1c3-5256980bc61e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Battleship/Battle/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Battle/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Battle/SinglePlayer.fxml" afterDir="false" />
+    <list default="true" id="52ac9bdc-60dd-4f40-a3fc-848b65241375" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/Battle/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/blueprint.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Battleship/Battle/blueprint.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/blueprint.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/blueprint.fxml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/Battleship.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Battleship.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Map.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Ship.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
+      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/Map.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/blueprint.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Battleship/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Map.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/SinglePlayer.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/blueprint.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,142 +24,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-<<<<<<< HEAD
     <option name="isMigrated" value="true" />
-=======
-<<<<<<< HEAD
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="814195704">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/Battle/BattleshipMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-=======
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Battle/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="79" />
+            <state relative-caret-position="-1291">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2914#2915#0" expanded="true" />
+                <element signature="e#2942#2943#0" expanded="true" />
               </folding>
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/Battle/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/Battle/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+            <state>
+              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+              <folding>
+                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Battle/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#78#79#0" expanded="true" />
-                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#2275#2281#0" expanded="true" />
               </folding>
-=======
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="167" selection-start-line="167" selection-end-line="167" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/module-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ship.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-=======
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Battle/SinglePlayer.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Battle/blueprint.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="525">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-=======
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-<<<<<<< HEAD
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>grid</find>
-    </findStrings>
-=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaFXApplication" />
-        <option value="package-info" />
         <option value="Class" />
-        <option value="FxmlFile" />
       </list>
     </option>
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>grid1</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -180,32 +83,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/Ship.java" />
-        <option value="$PROJECT_DIR$/src/Map.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-=======
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Map.fxml" />
-        <option value="$PROJECT_DIR$/src/blueprint.fxml" />
-        <option value="$PROJECT_DIR$/src/Map.java" />
-        <option value="$PROJECT_DIR$/src/package-info.java" />
-        <option value="$PROJECT_DIR$/src/module-info.java" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/Battle/blueprint.fxml" />
         <option value="$PROJECT_DIR$/src/Battle/Map.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/Battle/SinglePlayer.fxml" />
-        <option value="$PROJECT_DIR$/src/Battle/Controller.java" />
-=======
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/src/Battle/Board.java" />
+        <option value="$PROJECT_DIR$/src/Battle/Ship.java" />
+        <option value="$PROJECT_DIR$/src/Battle/BattleshipMain.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1054" />
     <option name="y" value="27" />
-    <option name="width" value="1920" />
+    <option name="width" value="866" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
@@ -213,17 +102,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-=======
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Battleship" type="b2602c69:ProjectViewProjectNode" />
               <item name="Battleship" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Battleship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Battleship" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Battleship" type="b2602c69:ProjectViewProjectNode" />
@@ -236,43 +125,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Battle" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Battleship" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Battleship" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-=======
       <pane id="PackagesPane" />
       <pane id="Scope" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-<<<<<<< HEAD
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-=======
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/HelloWorldFX" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Battle" />
-    </key>
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Battleship" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,57 +151,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Map">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager">
+    <configuration name="BattleshipMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Battle.BattleshipMain" />
       <module name="Battleship" />
-<<<<<<< HEAD
-=======
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Battle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Battle.Map" />
-      <module name="Battleship" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Map" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Map" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.BattleshipMain" />
       </list>
     </recent_temporary>
   </component>
@@ -345,53 +176,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="b2902a5c-ad40-40a0-a59b-81c2e173c2dc" name="Default Changelist" comment="" />
-      <created>1556389767771</created>
+      <changelist id="52ac9bdc-60dd-4f40-a3fc-848b65241375" name="Default Changelist" comment="" />
+      <created>1556468295728</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1556389767771</updated>
-=======
-      <changelist id="d4b9b264-f516-4e8c-b1c3-5256980bc61e" name="Default" comment="" />
-      <created>1556047806679</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1556047806679</updated>
-<<<<<<< HEAD
-      <workItem from="1556048831619" duration="10283000" />
-=======
-      <workItem from="1556048831619" duration="5062000" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
+      <updated>1556468295728</updated>
+      <workItem from="1556468317349" duration="2930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="23419000" />
-=======
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="17432000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15431164" />
-=======
-    <option name="totallyTimeSpent" value="5062000" />
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
+    <option name="totallyTimeSpent" value="14395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15208112" />
-=======
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15208112" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.098719314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -401,36 +202,15 @@
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Find" order="3" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.5759219" />
-=======
       <window_info anchor="bottom" id="Find" order="3" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.30368763" />
-=======
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.18655097" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.27765727" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
-<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.329718" />
-=======
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.329718" />
-=======
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Maven" order="1" />
@@ -443,10 +223,6 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15208112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -479,197 +255,75 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
     </layout-to-restore>
-<<<<<<< HEAD
-=======
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-=======
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Map.fxml" />
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Ship.java" />
-    <entry file="file://$PROJECT_DIR$/Battleship.iml">
+    <entry file="file://$PROJECT_DIR$/src/Map.java" />
+    <entry file="file://$PROJECT_DIR$/src/Battle/SinglePlayer.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/Battle/blueprint.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/Battle/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/Battle/Map.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="375">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
-=======
-        <state relative-caret-position="190">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
+        <state relative-caret-position="100">
+          <caret line="4" column="138" selection-start-line="4" selection-start-column="138" selection-end-line="4" selection-end-column="138" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-info.java" />
+    <entry file="jar://$USER_HOME$/Documents/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="268">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/SinglePlayer.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="jar://$USER_HOME$/Documents/lib/javafx-sdk-11.0.2/lib/javafx.base.jar!/javafx/event/EventHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="250">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/blueprint.fxml">
+    <entry file="file://$PROJECT_DIR$/src/Battle/BattleshipMain.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="525">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-=======
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="100">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        <state relative-caret-position="-1291">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#78#79#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#2914#2915#0" expanded="true" />
+            <element signature="e#2942#2943#0" expanded="true" />
           </folding>
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-=======
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
->>>>>>> be2db1eafa3c4de5945d7e1ad91594f49c39c1c5
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/Battle/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="79" />
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+          <folding>
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Battle/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2275#2281#0" expanded="true" />
           </folding>
->>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>JavaFx</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Battleship</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -2,7 +2,7 @@ package Battle;
 
 import javafx.scene.Parent;
 
-public class Ship extends Parent {
+public class  Ship extends Parent {
     public int type;
     public boolean vertical = true;
     private int health;
