@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 public class Map extends Application {
 
     public static void main(String[] args) {
+
         launch(args);
     }
 
@@ -16,12 +17,7 @@ public class Map extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root= FXMLLoader.load(getClass().getResource("blueprint.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root));
-
-
-
-
+        primaryStage.setScene(new Scene(root,600,500));
         primaryStage.show();
-
     }
 }
