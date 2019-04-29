@@ -14,10 +14,6 @@ public class Main {
             System.out.print(Comp.alphabet[i]+"  ");
         }
 
-        System.out.print("\t\t\t\t\t\t  ");
-        for (int i=0;i<Comp.alphabet.length;i++){
-            System.out.print(Comp.alphabet[i]+"  ");
-        }
         System.out.print("\n");
         for (int i=0; i<10; i++){
             System.out.print(i+" ");
@@ -29,11 +25,7 @@ public class Main {
             for (int k=0;k<10;k++ ) {
                 System.out.print(Comp.grid_front[i][k]+"  ");
             }
-            System.out.print("\t\t\t\t\t\t");
-            System.out.print(i+" ");
-            for (int k=0;k<10;k++ ) {
-                System.out.print(Comp.grid_back[i][k]+"  ");
-            }
+
             System.out.print("\n");
         }
     }
@@ -58,8 +50,8 @@ public class Main {
 
         while(UserMap.nShip<9) {
             nS = (UserMap.nShip < 1) ? 5 : ((UserMap.nShip < 3) ? 4 : ((UserMap.nShip) < 5 ? 3 : ((UserMap.nShip < 9) ? 2 : -1)));
-            System.out.println("Configuring ship of the size "+ nS +":");
-            System.out.print("Position");
+            System.out.print("Configuring ship of the size "+ nS +": ");
+//            System.out.print("Position");
             s=input.nextLine();
             s=s.replaceAll("\\s+","");
 

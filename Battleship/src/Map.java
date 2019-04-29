@@ -1,3 +1,6 @@
+import java.awt.*;
+import java.awt.geom.Point2D;
+import java.io.PipedOutputStream;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -17,7 +20,6 @@ public class Map {
             Arrays.fill(grid_front[i], '*');
         }
     }
-
     public int convert(char choice) {
         switch (choice) {
             case 'A':case 'a':  return 0;
@@ -35,40 +37,94 @@ public class Map {
         }
     }
 
+    public static class Point extends Point2D{
+        int x,y;
 
-    public boolean check(int posX, int posY, char c) {
+        public Point(int x, int y) {
+            this.x=x;
+            this.y=y;
+        }
 
-        int endX = (posX + 1 > 9) ? 10 : posX + 2;
-        int endY = (posY + 1 > 9) ? 10 : posY + 2;
-         for (int i = (posX - 1 < 0) ? 0 : posX - 1; i < endX; i++) {
-            for (int k = (posY - 1 < 0) ? 0 : posY - 1; k < endY; k++) {
-                if (i == posX && k == posY) continue;
-                if (grid_back[k][i] == c) return true ;
+        @Override
+        public double getX() {
+            return x;
+        }
+
+        @Override
+        public double getY() {
+            return y;
+        }
+
+        @Override
+        public void setLocation(double x, double y) {
+            this.x=(int) x;
+            this.y= (int) y;
+        }
+
+        public void setLocation(int x, int y) {
+            this.x= x;
+            this.y= y;
+
+        }
+    }
+
+    public Point check(Point p , char c) {
+            Point pos = new Point(p.x,p.y);
+        int endX = (pos.x + 1 > 9) ? 10 : pos.x + 2;
+        int endY = (pos.y + 1 > 9) ? 10 : pos.y + 2;
+         for (int i = (pos.x - 1 < 0) ? 0 : pos.x - 1; i < endX; i++) {
+            for (int k = (pos.y - 1 < 0) ? 0 : pos.y - 1; k < endY; k++) {
+                if (i == pos.x && k == pos.y) continue;
+                if (grid_back[k][i] == c) {
+                    pos.setLocation(i,k);
+                    pos.x=i;
+                    pos.y=k;
+                    return pos;
+                }
             }
         }
+        return pos;
+    }
+
+
+
+    public boolean checkImmersed ( Point pos, int count ){
+        Point p=new Point(pos.x,pos.y);
+        System.out.println(count);
+        System.out.println("Asdfasd");
+
+        if (count==5) return true;
+        if (!ifEqual(check(p,'0'),p))  return false;
+
+         p=check(p, '/');
+            count++;
+            checkImmersed(p, count);
+
+        System.out.println("pos: " +  pos.x+ " " + pos.y);
+
+        return  true;
+    }
+
+    public boolean ifEqual(Point p1, Point p2){
+        if (p1.x==p2.x && p1.y==p2.y ) return true;
         return false;
     }
 
-
-    public boolean checkship(int posX, int posY, int size , char c){
+    public boolean checkship(Point pos, int size , char c){
         if (size==0) return true ;
-
-
-        if (posX>9 || posY>9 ) return false;
-        if (check(posX,posY,'0')) return false;
-
-
-
+//        Point p = new Point(posX,posY);
+        if (pos.x>9 || pos.y>9 ) return false;
+         Point p= check(pos,'0');
+        if ( !ifEqual(pos,p) ) return false;
         else {
-            if (c == 'h' || c == 'H') posX = posX + 1;
-            else if (c == 'v' || c == 'V') posY = posY + 1;
+            if (c == 'h' || c == 'H') pos.x = pos.x + 1;
+            else if (c == 'v' || c == 'V') pos.y = pos.y + 1;
             else return false;
         }
+
          size--;
-         return  checkship(posX, posY, size, c);
+         return  checkship(pos, size, c);
     }
-
-
 
     public boolean addship(Ship ship, char[] opt) {
         if (opt.length != 3) {
@@ -83,8 +139,10 @@ public class Map {
             System.out.println("Out of range");
             return false;
         }
+        Point p= new Point(X,Y);
 
-        if (checkship(X,Y, ship.nSize,opt[2])==false) {
+
+        if (checkship( p, ship.nSize,opt[2])==false) {
                 System.out.println("Checkship failed");
                 return false;
         }
@@ -99,6 +157,8 @@ public class Map {
     }
 
     public boolean shootint (int X, int Y){
+
+        Point p = new Point(X,Y);
         System.out.println(X+" "+ Y);
         if (grid_back[Y][X]=='*') {
             grid_back[Y][X]='-';
@@ -106,7 +166,7 @@ public class Map {
         }
 
         if (grid_back[Y][X] == '0') {
-            if (check(X, Y, '0')) {
+            if (!checkImmersed(p,0)) {
                 grid_back[Y][X] = '/';
                 return true;
             } else {
@@ -169,13 +229,14 @@ public class Map {
         while (nShip<9) {
             x=rand.nextInt(10);
             y=rand.nextInt(10);
+            Point p= new Point(x,y);
             c = choice[rand.nextInt(choice.length)];
             nS = (nShip < 1) ? 5 : ((nShip < 3) ? 4 : ((nShip) < 5 ? 3 : ((nShip < 9) ? 2 : -1)));
 
             ships[nShip] = new Ship(nS);
             System.out.println(nShip +  "  "+  nS);
 
-            if (checkship(x, y, ships[nShip].nSize, c) == false) {
+            if (checkship(p, ships[nShip].nSize, c) == false) {
                 System.out.println("Checkship failed");
 
                 continue;
@@ -196,7 +257,7 @@ public class Map {
         Random rand = new Random();
         x=rand.nextInt(10);
         y=rand.nextInt(10);
-
+        if (grid_back[y][x]=='-' || grid_back[y][x]=='/' || grid_back[y][x]=='X') autoshoot();
         if (shootint(x,y)) return true;
         return false;
     }
