@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="758e06e4-0ed5-4ba9-ba9f-7638a2640fca" name="Default" comment="" />
 =======
     <list default="true" id="d4b9b264-f516-4e8c-b1c3-5256980bc61e" name="Default" comment="">
@@ -18,6 +19,11 @@
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ship.java" beforeDir="false" />
+=======
+    <list default="true" id="b2902a5c-ad40-40a0-a59b-81c2e173c2dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Battle/BattleshipMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/BattleshipMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Board.java" afterDir="false" />
+>>>>>>> 546a70837f78d74b9901cd146a55ce5f94e103b8
     </list>
 >>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,28 +34,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Battle/Map.java">
+        <entry file="file://$PROJECT_DIR$/src/Battle/BattleshipMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="-162">
+              <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#3322#3323#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-info.java">
+        <entry file="file://$PROJECT_DIR$/src/Battle/Board.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
@@ -72,6 +77,13 @@
             <state relative-caret-position="105">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
 >>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
+=======
+            <state relative-caret-position="-12">
+              <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 546a70837f78d74b9901cd146a55ce5f94e103b8
             </state>
           </provider>
         </entry>
@@ -81,25 +93,32 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
-        <option value="package-info" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>grid</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Ship.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Map.fxml" />
-        <option value="$PROJECT_DIR$/src/blueprint.fxml" />
         <option value="$PROJECT_DIR$/src/Map.java" />
-        <option value="$PROJECT_DIR$/src/package-info.java" />
-        <option value="$PROJECT_DIR$/src/module-info.java" />
-        <option value="$PROJECT_DIR$/src/Battle/Map.java" />
+        <option value="$PROJECT_DIR$/src/MapTest.java" />
+        <option value="$PROJECT_DIR$/src/Battle/Board.java" />
+        <option value="$PROJECT_DIR$/src/Battle/BattleshipMain.java" />
       </list>
     </option>
   </component>
@@ -113,12 +132,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Battleship" type="b2602c69:ProjectViewProjectNode" />
               <item name="Battleship" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Battleship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Battleship" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Battleship" type="b2602c69:ProjectViewProjectNode" />
@@ -135,23 +161,31 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/HelloWorldFX" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Battle" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -166,54 +200,75 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Map">
+  <component name="RunManager" selected="Application.BattleshipMain">
+    <configuration name="BattleshipMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Battle.BattleshipMain" />
+      <module name="Battleship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Battle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Battleship" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Battle.Map" />
+    <configuration name="MapTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Battleship" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
+    <configuration name="MapTest.autoshoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="autoshoot" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Map" />
-    </list>
+    <configuration name="MapTest.checkship" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="checkship" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.shootchar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="shootchar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Map" />
+        <item itemvalue="Application.BattleshipMain" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MapTest.checkship" />
+        <item itemvalue="JUnit.MapTest.autoshoot" />
+        <item itemvalue="JUnit.MapTest.shootchar" />
       </list>
     </recent_temporary>
   </component>
@@ -222,23 +277,55 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d4b9b264-f516-4e8c-b1c3-5256980bc61e" name="Default" comment="" />
-      <created>1556047806679</created>
+      <changelist id="b2902a5c-ad40-40a0-a59b-81c2e173c2dc" name="Default Changelist" comment="" />
+      <created>1556587146904</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1556047806679</updated>
-      <workItem from="1556048831619" duration="5062000" />
+      <updated>1556587146904</updated>
+      <workItem from="1556587153163" duration="2661000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MapTest_shootint - 2019.04.30 at 04h 21m 16s.xml">
+      <configuration name="MapTest.shootint" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_shootint - 2019.04.30 at 04h 21m 23s.xml">
+      <configuration name="MapTest.shootint" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_shootchar - 2019.04.30 at 04h 21m 30s.xml">
+      <configuration name="MapTest.shootchar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_autoshoot - 2019.04.30 at 04h 21m 35s.xml">
+      <configuration name="MapTest.autoshoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_autoshoot - 2019.04.30 at 04h 21m 52s.xml">
+      <configuration name="MapTest.autoshoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_autoshoot - 2019.04.30 at 04h 21m 55s.xml">
+      <configuration name="MapTest.autoshoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 04h 22m 08s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 04h 22m 49s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 04h 22m 59s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 05h 20m 54s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5062000" />
+    <option name="totallyTimeSpent" value="43280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15208112" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.100853786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
 <<<<<<< HEAD
@@ -271,15 +358,15 @@
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.18655097" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.27874187" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.03253796" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Maven" order="1" />
@@ -293,65 +380,84 @@
       <window_info anchor="right" id="Maven Projects" order="9" />
 >>>>>>> 3bea2617f61b8fb4ff1593070259557812420034
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15208112" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.09327549" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Maven" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="375">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Map.fxml">
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/MapTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/Map.java" />
+    <entry file="file://$PROJECT_DIR$/src/Ship.java" />
+    <entry file="file://$PROJECT_DIR$/src/Battle/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Battle/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="83" column="3" lean-forward="true" selection-start-line="83" selection-start-column="3" selection-end-line="83" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ship.java">
+    <entry file="file://$PROJECT_DIR$/src/Battle/BattleshipMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Battleship.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/blueprint.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="-162">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#3322#3323#0" expanded="true" />
           </folding>
         </state>
       </provider>
