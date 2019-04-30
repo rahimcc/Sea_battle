@@ -15,7 +15,7 @@ import javafx.scene.shape.Rectangle;
 public class Board extends Parent {
     private VBox rows = new VBox();
     private boolean enemy = false;
-    public int ships = 5;
+    public int ships = 9;
 
     public Board(boolean enemy, EventHandler<? super MouseEvent> handler) {
         this.enemy = enemy;

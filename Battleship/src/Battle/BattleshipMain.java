@@ -2,6 +2,7 @@ package Battle;
 
 import java.util.Random;
 
+import com.sun.prism.shader.Solid_TextureYV12_AlphaTest_Loader;
 import javafx.application.Application;
 import javafx.geometry.HPos;
 import javafx.geometry.HorizontalDirection;
@@ -21,7 +22,7 @@ import Battle.Board.Cell;
 public class BattleshipMain extends Application {
     private boolean running = false;
     private Board enemyBoard, playerBoard;
-    private int shipsToPlace = 5;
+    private int shipsToPlace = 0;
     private boolean enemyTurn = false;
     private Random random = new Random();
 
@@ -54,9 +55,10 @@ public class BattleshipMain extends Application {
                 return;
 
             Cell cell = (Cell) event.getSource();
-
-            if (playerBoard.placeShip(new Ship(shipsToPlace, event.getButton() == MouseButton.PRIMARY), cell.x, cell.y)) {
-                if (--shipsToPlace == 0) {
+            int nS;
+            nS = (shipsToPlace < 1) ? 5 : ((shipsToPlace < 3) ? 4 : ((shipsToPlace) < 5 ? 3 : ((shipsToPlace < 9) ? 2 : -1)));
+            if (playerBoard.placeShip(new Ship(nS, event.getButton() == MouseButton.PRIMARY), cell.x, cell.y)) {
+                if (++shipsToPlace == 9) {
                     startGame();
                 }
             }
@@ -89,14 +91,17 @@ public class BattleshipMain extends Application {
 
     private void startGame() {
         // place enemy ships
-        int type = 5;
-        while (type > 0) {
+        int type = 0;
+        int nS;
+        while (type < 9) {
+            nS = (type < 1) ? 5 : ((type < 3) ? 4 : ((type) < 5 ? 3 : ((type < 9) ? 2 : -1)));
             int x = random.nextInt(10);
             int y = random.nextInt(10);
 
-            if (enemyBoard.placeShip(new Ship(type, Math.random() < 0.5), x, y)) {
-                type--;
+            if (!enemyBoard.placeShip(new Ship(nS, Math.random() < 0.5), x, y)) {
+                continue;
             }
+            type++;
         }
         running = true;
     }
