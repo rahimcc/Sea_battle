@@ -28,6 +28,9 @@ Program accepts position in format: [column] [row]
 
 If shooting position is a miss position changes its state to '-', if it is a hit it becames '/', it becomes 'X' after destroying ship completely. Game ends, if ships of either one of maps is destroyed completely. 
 
+UML diagram
+![_Blank UML -  Blank UML (1)](https://user-images.githubusercontent.com/49517802/56984635-8f4e0700-6b97-11e9-8cba-1be6d2317282.png)
+
 
 ## N.Battle.V2
 
@@ -46,19 +49,9 @@ Game starts with placing ship on User's map. Size of ships is ordered 5 to 2. Ri
 
 Computer and Player take turns to hit the ships. Cell becomes red when it is a hit, becomes black when it is miss. Game ends when ships of either map destroyed completely
 
-## Installation
-1.Make sure you've installed all requirements
-2.Clone this repository: git clone https://github.com/rahimcc/Sea_battle
-3.Change into the directory of the project
-4.Use javac *.java to compile the source code
-5 To run the program: java Sea_battle
+UML diagram
 
-## Contributing
-1.Fork it
-2.Create your feature branch: git checkout -b feature/my-new-feature
-3.Commit your changes: git commit -am 'Add some feature'
-4.Push to the branch: git push origin feature/my-new-feature
-5.Submit a pull request
+![_Blank UML - Page 2 (1)](https://user-images.githubusercontent.com/49517802/56984597-747b9280-6b97-11e9-81ee-5845be983204.png)
 
 
 ## Development 
