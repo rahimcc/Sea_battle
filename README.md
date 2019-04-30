@@ -46,6 +46,20 @@ Game starts with placing ship on User's map. Size of ships is ordered 5 to 2. Ri
 
 Computer and Player take turns to hit the ships. Cell becomes red when it is a hit, becomes black when it is miss. Game ends when ships of either map destroyed completely
 
+## Installation
+1.Make sure you've installed all requirements
+2.Clone this repository: git clone https://github.com/rahimcc/Sea_battle
+3.Change into the directory of the project
+4.Use javac *.java to compile the source code
+5 To run the program: java Sea_battle
+
+## Contributing
+1.Fork it
+2.Create your feature branch: git checkout -b feature/my-new-feature
+3.Commit your changes: git commit -am 'Add some feature'
+4.Push to the branch: git push origin feature/my-new-feature
+5.Submit a pull request
+
 
 ## Development 
 This project was developed by Rahim Sharifov, Sara Shamilova , Sabina Hadjimuradova. Only one name can appear in commits, because we used mainly one computer.  
