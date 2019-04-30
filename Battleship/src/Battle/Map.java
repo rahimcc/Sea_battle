@@ -12,12 +12,12 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 
-public class Board extends Parent {
+public class Map extends Parent {
     private VBox rows = new VBox();
     private boolean enemy = false;
     public int ships = 9;
 
-    public Board(boolean enemy, EventHandler<? super MouseEvent> handler) {
+    public Map(boolean enemy, EventHandler<? super MouseEvent> handler) {
         this.enemy = enemy;
         for (int y = 0; y < 10; y++) {
             HBox row = new HBox();
@@ -34,8 +34,8 @@ public class Board extends Parent {
 
 
 
-    public boolean placeShip(Ship ship, int x, int y) {
-        if (canPlaceShip(ship, x, y)) {
+    public boolean addShip(Ship ship, int x, int y) {
+        if (checkShip(ship, x, y)) {
             int length = ship.type;
 
             if (ship.vertical) {
@@ -87,7 +87,7 @@ public class Board extends Parent {
         return neighbors.toArray(new Cell[0]);
     }
 
-    private boolean canPlaceShip(Ship ship, int x, int y) {
+    private boolean checkShip(Ship ship, int x, int y) {
         int length = ship.type;
 
         if (ship.vertical) {
@@ -134,7 +134,7 @@ public class Board extends Parent {
         return isValidPoint(point.getX(), point.getY());
     }
 
-    private boolean isValidPoint(double x, double y) {
+    private boolean isValidPoint(double x, double    y) {
         return x >= 0 && x < 10 && y >= 0 && y < 10;
     }
 
@@ -143,9 +143,9 @@ public class Board extends Parent {
         public Ship ship = null;
         public boolean wasShot = false;
 
-        private Board board;
+        private Map board;
 
-        public Cell(int x, int y, Board board) {
+        public Cell(int x, int y, Map board) {
             super(30, 30);
             this.x = x;
             this.y = y;

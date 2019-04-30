@@ -17,11 +17,11 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
-import Battle.Board.Cell;
+import Battle.Map.Cell;
 
 public class BattleshipMain extends Application {
     private boolean running = false;
-    private Board enemyBoard, playerBoard;
+    private Map enemyBoard, playerBoard;
     private int shipsToPlace = 0;
     private boolean enemyTurn = false;
     private Random random = new Random();
@@ -31,7 +31,7 @@ public class BattleshipMain extends Application {
         BorderPane root = new BorderPane();
         root.setPrefSize(600, 800);
 
-        enemyBoard = new Board(true, event -> {
+        enemyBoard = new Map(true, event -> {
             if (!running)
                 return ;
 
@@ -50,14 +50,14 @@ public class BattleshipMain extends Application {
                 enemyMove();
         });
 
-        playerBoard = new Board(false, event -> {
+        playerBoard = new Map(  false, event -> {
             if (running)
                 return;
 
             Cell cell = (Cell) event.getSource();
             int nS;
             nS = (shipsToPlace < 1) ? 5 : ((shipsToPlace < 3) ? 4 : ((shipsToPlace) < 5 ? 3 : ((shipsToPlace < 9) ? 2 : -1)));
-            if (playerBoard.placeShip(new Ship(nS, event.getButton() == MouseButton.PRIMARY), cell.x, cell.y)) {
+            if (playerBoard.addShip(new Ship(nS, event.getButton() == MouseButton.PRIMARY), cell.x, cell.y)) {
                 if (++shipsToPlace == 9) {
                     startGame();
                 }
@@ -98,7 +98,7 @@ public class BattleshipMain extends Application {
             int x = random.nextInt(10);
             int y = random.nextInt(10);
 
-            if (!enemyBoard.placeShip(new Ship(nS, Math.random() < 0.5), x, y)) {
+            if (!enemyBoard.addShip(new Ship(nS, Math.random() < 0.5), x, y)) {
                 continue;
             }
             type++;
