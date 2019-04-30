@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52ac9bdc-60dd-4f40-a3fc-848b65241375" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b2902a5c-ad40-40a0-a59b-81c2e173c2dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/Map.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/Battle/blueprint.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Battleship/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Map.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/SinglePlayer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/blueprint.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/BattleshipMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/BattleshipMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,15 +17,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Battle/BattleshipMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1291">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="-762">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2914#2915#0" expanded="true" />
-                <element signature="e#2942#2943#0" expanded="true" />
+                <element signature="e#2926#2927#0" expanded="true" />
+                <element signature="e#2954#2955#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,23 +35,18 @@
         <entry file="file://$PROJECT_DIR$/src/Battle/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-              <folding>
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-              </folding>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Battle/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="58">
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2275#2281#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,28 +57,37 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>grid</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Battle/Map.java" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/src/Battle/Board.java" />
-        <option value="$PROJECT_DIR$/src/Battle/Ship.java" />
+        <option value="$PROJECT_DIR$/src/Ship.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Map.java" />
+        <option value="$PROJECT_DIR$/src/MapTest.java" />
         <option value="$PROJECT_DIR$/src/Battle/BattleshipMain.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1054" />
     <option name="y" value="27" />
-    <option name="width" value="866" />
+    <option name="width" value="1920" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
@@ -102,6 +95,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,15 +124,32 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Battleship" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BattleshipMain">
     <configuration name="BattleshipMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Battle.BattleshipMain" />
       <module name="Battleship" />
@@ -165,9 +177,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Battleship" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Battleship" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.autoshoot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="autoshoot" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.checkship" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="checkship" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.shootchar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Battleship" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="shootchar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BattleshipMain" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MapTest.checkship" />
+        <item itemvalue="JUnit.MapTest.autoshoot" />
+        <item itemvalue="JUnit.MapTest.shootchar" />
       </list>
     </recent_temporary>
   </component>
@@ -176,23 +240,55 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="52ac9bdc-60dd-4f40-a3fc-848b65241375" name="Default Changelist" comment="" />
-      <created>1556468295728</created>
+      <changelist id="b2902a5c-ad40-40a0-a59b-81c2e173c2dc" name="Default Changelist" comment="" />
+      <created>1556587146904</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1556468295728</updated>
-      <workItem from="1556468317349" duration="2930000" />
+      <updated>1556587146904</updated>
+      <workItem from="1556587153163" duration="2661000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MapTest_shootint - 2019.04.30 at 04h 21m 16s.xml">
+      <configuration name="MapTest.shootint" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_shootint - 2019.04.30 at 04h 21m 23s.xml">
+      <configuration name="MapTest.shootint" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_shootchar - 2019.04.30 at 04h 21m 30s.xml">
+      <configuration name="MapTest.shootchar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_autoshoot - 2019.04.30 at 04h 21m 35s.xml">
+      <configuration name="MapTest.autoshoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_autoshoot - 2019.04.30 at 04h 21m 52s.xml">
+      <configuration name="MapTest.autoshoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_autoshoot - 2019.04.30 at 04h 21m 55s.xml">
+      <configuration name="MapTest.autoshoot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 04h 22m 08s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 04h 22m 49s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 04h 22m 59s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_checkship - 2019.04.30 at 05h 20m 54s.xml">
+      <configuration name="MapTest.checkship" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14395000" />
+    <option name="totallyTimeSpent" value="42342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.098719314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.100853786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -202,15 +298,15 @@
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.27765727" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.27874187" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.03253796" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3286334" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Maven" order="1" />
@@ -259,46 +355,48 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Map.java" />
-    <entry file="file://$PROJECT_DIR$/src/Battle/SinglePlayer.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Battle/blueprint.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Battle/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/Battle/Map.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="138" selection-start-line="4" selection-start-column="138" selection-end-line="4" selection-end-column="138" />
+        <state relative-caret-position="375">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-info.java" />
-    <entry file="jar://$USER_HOME$/Documents/lib/javafx-sdk-11.0.2/lib/javafx.graphics.jar!/javafx/application/Application.class">
+    <entry file="file://$PROJECT_DIR$/src/MapTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="248">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Documents/lib/javafx-sdk-11.0.2/lib/javafx.base.jar!/javafx/event/EventHandler.class">
+    <entry file="file://$PROJECT_DIR$/src/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="6200">
+          <caret line="248" column="25" selection-start-line="248" selection-start-column="25" selection-end-line="248" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/BattleshipMain.java">
+    <entry file="file://$PROJECT_DIR$/src/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1291">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state>
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Battle/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2914#2915#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -306,24 +404,96 @@
     <entry file="file://$PROJECT_DIR$/src/Battle/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-          </folding>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Battle/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/Battle/BattleshipMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="-762">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2275#2281#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>JavaFx</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Battleship</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

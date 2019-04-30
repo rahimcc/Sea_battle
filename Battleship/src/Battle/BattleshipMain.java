@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -61,10 +62,10 @@ public class BattleshipMain extends Application {
             }
         });
 
-        VBox vbox = new VBox( enemyBoard, playerBoard);
-        vbox.setAlignment(Pos.CENTER_RIGHT);
+        HBox hBox = new HBox(50, enemyBoard, playerBoard);
+        hBox.setAlignment(Pos.CENTER_RIGHT);
 
-        root.setCenter(vbox);
+        root.setCenter(hBox);
         return root;
     }
 
